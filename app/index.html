@@ -1,134 +1,144 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/all.css" />
-    <title>https://alexandrabrro.github.io/goit-markup-hw-01/app/</title>
+    <!-- <link rel="stylesheet" type="text/css" href="css/all.css" /> -->
+    <title>home</title>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper d-flex flex-column">
       <header class="header">
-        <div>
+        <div class="centered d-flex flex-wrap align-items-center">
           <strong class="logo">
             <a href="index.html"><span>Web</span>Studio</a>
           </strong>
           <nav>
-            <ul>
+            <ul class="list-unstyled d-flex">
               <li><a href="about_us.html">Студия</a></li>
               <li><a href="portfolio.html">Портфолио</a></li>
               <li><a href="contact.html">Контакты</a></li>
             </ul>
           </nav>
           <span class="contact_link">
-            <a href="mailto:info@devstudio.com">nfo@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" title="отправить письмо info@devstudio.com">nfo@devstudio.com</a>
           </span>
           <span class="contact_link">
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" title="позвонить +38 096 111 11 11">+38 096 111 11 11</a>
           </span>
         </div>
       </header>
-      <main>
-        <div>
-          <h1>Эффективные решения для вашего бизнеса</h1>
-          <button type="Заказать услугу">Заказать услугу</button>
+      <main class="main_container">
+        <div class="section_hero">
+          <div class="centered text-center">
+            <h1>Эффективные решения для вашего бизнеса</h1>
+            <!-- <a href="#" class="btn btn-primary">Заказать услугу</a> -->
+            <button type="button">Заказать услугу</button>
+          </div>
         </div>
-        <div>
-          <ul>
+        <div class="centered">
+          <ul class="section_peculiarities d-flex list-unstyled">
             <li>
               <h3>Внимание к деталям</h3>
-            </li>
-            <li>
               <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
-          </ul>
-
-          <ul>
             <li>
               <h3>Пунктуальность</h3>
-            </li>
-            <li>
               <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
-          </ul>
-
-          <ul>
             <li>
               <h3>Планирование</h3>
-            </li>
-            <li>
               <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
-          </ul>
-
-          <ul>
             <li>
               <h3>Современные технологии</h3>
-            </li>
-            <li>
               <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
           </ul>
-        </div>
-        <div>
-          <h2>Чем мы занимаемся</h2>
-          <ul>
-            <li>
-              <img src="images/box_1.jpg" alt="Ввод данных на клавиатуре">
-            </li>
-            <li>
-              <img src="images/box_2.jpg" alt="Мобильный телефон и ноутбук">
-            </li>
-            <li>
-              <img src="images/box_3.jpg" alt="Цветные соты">
-            </li>
-          </ul>
-        </div>
-        <div>
-        <h2>Наша команда</h2>
-          <div>
-            <img src="images/team_1.jpg" alt="портрет">
-            <h4>Игорь Демьяненко</h4>
-            <p>Product Designer</p>
+          <div class="section_about">
+            <h2 class="text-center">Чем мы занимаемся</h2>
+            <ul class="d-flex list-unstyled">
+              <li>
+                <a href="#" title="category_1">
+                  <img src="images/box_1.jpg" alt="Ввод данных на клавиатуре" width="370" height="294">
+                </a>
+              </li>
+              <li>
+                <a href="#"  title="category_2">
+                  <img src="images/box_2.jpg" alt="Мобильный телефон и ноутбук" width="370" height="294">
+                </a>
+              </li>
+              <li>
+                <a href="#"  title="category_3">
+                  <img src="images/box_3.jpg" alt="Цветные соты" width="370" height="294">
+                </a>
+                
+              </li>
+            </ul>
           </div>
-          <div>
-            <img src="images/team_2.jpg" alt="портрет">
-            <h4>Ольга Репина</h4>
-            <p>Frontend Developer</p>
-          </div>
-          <div>
-            <img src="images/team_3.jpg" alt="портрет">
-            <h4>Николай Тарасов</h4>
-            <p>Marketing</p>
-          </div>
-          <div>
-            <img src="images/team_4.jpg" alt="портрет">
-            <h4>Михаил Ермаков</h4>
-            <p>UI Designer</p>
+          <div class="section_team">
+            <h2 class="text-center">Наша команда</h2>
+            <ul class="d-flex list-unstyled">
+              <li>
+                <figure>
+                  <a href="#" class="d-block">
+                    <img src="images/team_1.jpg" alt="портрет" width="270" height="260" class="img-fluid">
+                  </a>
+                  <figcaption>
+                    <h4>Игорь Демьяненко</h4>
+                    <p>Product Designer</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <a href="#" class="d-block">
+                    <img src="images/team_2.jpg" alt="портрет" width="270" height="260" class="img-fluid">
+                  </a>
+                  <figcaption>
+                    <h4>Ольга Репина</h4>
+                    <p>Frontend Developer</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <a href="#" class="d-block">
+                    <img src="images/team_3.jpg" alt="портрет" width="270" height="260" class="img-fluid">
+                  </a>
+                  <figcaption>
+                    <h4>Николай Тарасов</h4>
+                    <p>Marketing</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <a href="#" class="d-block">
+                    <img src="images/team_4.jpg" alt="портрет" width="270" height="260" class="img-fluid">
+                  </a>
+                  <figcaption>
+                    <h4>Михаил Ермаков</h4>
+                    <p>UI Designer</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
           </div>
         </div>
       </main>
-      <footer>
-       <div>
+      <footer class="footer">
+        <div class="centered">
           <strong class="logo">
             <a href="index.html"><span>Web</span>Studio</a>
           </strong>
-        <ul>
-          <li>
-            <address class="">
-              <a href="">г. Киев, пр-т Леси Украинки, 26</a>
-            </address>
-          </li>
-          <li>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li>
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
-       </div> 
+          <address>
+            <p>г. Киев, пр-т Леси Украинки, 26</p>
+            <p><a href="mailto:info@devstudio.com">info@devstudio.com</a></p>
+            <p><a href="tel:+380961111111">+38 096 111 11 11</a></p>
+          </address>
+        </div> 
       </footer>
     </div>
   </body>
-</html>
+</html>  

@@ -11,8 +11,12 @@ body {
           box-sizing: border-box;
 }
 
+:root {
+  --font-family:"Roboto", sans-serif;
+}
+
 body {
-  font: 400 14px/24px "Roboto", sans-serif;
+  font: 400 14px/24px var(--font-family);
 }
 
 html,
@@ -94,8 +98,25 @@ body {
 }
 
 .btn {
-  padding: 15px;
+  padding: 10px 15px;
+  min-width: 200px;
   background: red;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.btn:hover {
+  opacity: 0.5;
+}
+.btn.btn-primary {
+  background: #2196F3;
 }
 
 .header {
@@ -157,12 +178,29 @@ body {
 
 .section_hero {
   background: #2F303A;
+}
+.section_hero .centered {
   height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .section_hero h1 {
   color: #fff;
-  font: 900 44px/60px;
+  font: 900 44px/60px var(--font-family);
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin: 0;
+  padding: 30px 0;
 }
 /*# sourceMappingURL=all.css.map */

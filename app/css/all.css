@@ -204,6 +204,9 @@ body {
   padding: 30px 0;
 }
 
+.section_peculiarities li {
+  padding-right: 30px;
+}
 .section_peculiarities li h3 {
   color: #212121;
   font: 700 14px/16px var(--font-family);
@@ -218,10 +221,19 @@ body {
 
 .d-flex {
   background: #E5E5E5;
-  padding-right: 30px;
 }
 
 .list-unstyled {
   padding: 47px 0 94px;
+}
+
+.section_about h2 {
+  color: #212121;
+  font: 700 36px/42px var(--font-family);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.section_about img {
+  padding-right: 30px;
 }
 /*# sourceMappingURL=all.css.map */

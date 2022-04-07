@@ -19,6 +19,7 @@
 }
 .section_peculiarities{
 	li{
+		padding-right: 30px;
 		h3{
 			color:#212121;
 			font: 700 14px/16px var(--font-family);
@@ -34,7 +35,6 @@
 }
 .d-flex{
 	background: #E5E5E5;
-	padding-right: 30px;
 
 }
 .list-unstyled{
@@ -42,8 +42,15 @@
 }
 .section_about{
 	h2{
-		.section_about{
-			
-		}
+		color: #212121;
+		font: 700 36px/42px var(--font-family);
+		text-align: center;
+		letter-spacing: 0.03em;
 	}
+	img{
+		padding-right: 30px;
+	}
+}
+.section_team{
+
 }

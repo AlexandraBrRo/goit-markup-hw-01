@@ -35,6 +35,7 @@ body {
 
 .wrapper {
   min-height: 100%;
+  overflow: hidden;
 }
 
 .main_container {
@@ -137,6 +138,9 @@ body {
 .logo a span {
   color: #2196F3;
 }
+.footer .logo a {
+  color: #fff;
+}
 
 .contact_link {
   padding-left: 50px;
@@ -173,7 +177,20 @@ body {
 }
 
 .footer {
-  background: red;
+  background: #2F303A;
+}
+.footer address {
+  font-style: normal;
+}
+.footer p {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+.footer p a {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .section_hero {
@@ -219,21 +236,68 @@ body {
   letter-spacing: 0.03em;
 }
 
-.d-flex {
-  background: #E5E5E5;
-}
-
-.list-unstyled {
-  padding: 47px 0 94px;
-}
-
 .section_about h2 {
   color: #212121;
   font: 700 36px/42px var(--font-family);
   text-align: center;
   letter-spacing: 0.03em;
 }
-.section_about img {
-  padding-right: 30px;
+.section_about ul {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.section_about ul li {
+  max-width: 33.3%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.3%;
+          flex: 0 0 33.3%;
+  padding: 0 15px;
+}
+
+.section_team {
+  position: relative;
+}
+.section_team:before {
+  content: "";
+  background: #E5E5E5;
+  width: 99999px;
+  display: block;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.section_team h2 {
+  color: #212121;
+  font: 700 36px/42px var(--font-family);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.section_team ul {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.section_team ul li {
+  max-width: 25%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  padding: 0 15px;
+}
+.section_team h4 {
+  font: 500 16px/19px var(--font-family);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.section_team p {
+  font: 400 16px/19px var(--font-family);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 /*# sourceMappingURL=all.css.map */

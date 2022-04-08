@@ -1,3 +1,16 @@
 .footer{
-	background: red;
+	background:#2F303A;
+	address{
+		font-style: normal;
+	}
+	p{
+		color: #FFFFFF;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 24px;
+		letter-spacing: 0.03em;
+		a{
+			color: rgba(#fff,.6);
+		}
+	}
 }
